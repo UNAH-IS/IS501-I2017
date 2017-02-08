@@ -29,6 +29,20 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CODIGO_FACULTAD" id="B496A8E2-57FD-DBD0-02FB-9283338E01AB">
+<createdBy>ErickVladimir</createdBy>
+<createdTime>2017-02-07 19:34:35 UTC</createdTime>
+<ownerDesignName>bd_unah</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5B0D3E5-B433-3530-4B66-85154DFD85D1" referredColumn="1FBEAA88-FC30-A69F-22EF-CCF98C66CAF5"/>
+</associations>
+</Column>
 <Column name="NOMBRE_CARRERA" id="3014E199-5A67-E221-6486-5DE91C0CF8E6">
 <createdBy>ErickVladimir</createdBy>
 <createdTime>2017-02-03 16:48:25 UTC</createdTime>
@@ -97,6 +111,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A361A48A-BF18-CC9C-3647-99FF36561388"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21CCAF7D-0D19-2A57-A414-CD9239D224E6" name="TBL_CARRERAS_TBL_FACULTADES_FK">
+<createdBy>ErickVladimir</createdBy>
+<createdTime>2017-02-07 19:34:35 UTC</createdTime>
+<ownerDesignName>bd_unah</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B496A8E2-57FD-DBD0-02FB-9283338E01AB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
