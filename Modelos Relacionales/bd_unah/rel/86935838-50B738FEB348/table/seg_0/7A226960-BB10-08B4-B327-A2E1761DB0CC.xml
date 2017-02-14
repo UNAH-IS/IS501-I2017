@@ -78,6 +78,20 @@
 <colAssociation fkAssociation="9D22EBF1-30C8-4371-1AE7-AB762A8D489D" referredColumn="CE3AA321-17A9-6F83-FB79-CAE8AC08E8B5"/>
 </associations>
 </Column>
+<Column name="CODIGO_TIPO_ASIGNATURA" id="E46234C4-0D94-074B-CAF2-723BA28C513A">
+<createdBy>ErickVladimir</createdBy>
+<createdTime>2017-02-08 19:13:36 UTC</createdTime>
+<ownerDesignName>bd_unah</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E84EEA22-E1EA-E0B8-AD6F-6E39FEC15B9F" referredColumn="FE8AF435-5A22-0B44-3717-F25532FCADE3"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="9738748F-EB26-0C73-5A22-49C42CD04CB0" name="TBL_ASIGNATURAS_PK">
@@ -99,6 +113,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="144A6E31-6FDC-6F01-BB0A-F5D9078392B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CDD9F68-9F8B-5E52-7D6F-38D14C4C1007" name="TBL_ASIGNATURAS_TBL_TIPO_ASIGNATURA_FK">
+<createdBy>ErickVladimir</createdBy>
+<createdTime>2017-02-08 19:13:36 UTC</createdTime>
+<ownerDesignName>bd_unah</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E46234C4-0D94-074B-CAF2-723BA28C513A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
