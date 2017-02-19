@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="bd_youtube" id="76F32693-A9EF-E5EA-7289-D3671BA98FF4" version="3.5">
+<createdBy>ErickVladimir</createdBy>
+<createdTime>2017-02-16 19:08:48 UTC</createdTime>
+<ownerDesignName>bd_youtube</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>76F32693-A9EF-E5EA-7289-D3671BA98FF4</designId>
+</OSDM_Design>
