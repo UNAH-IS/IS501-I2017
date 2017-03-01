@@ -12,6 +12,7 @@
 <createdBy>ErickVladimir</createdBy>
 <createdTime>2017-02-16 19:47:52 UTC</createdTime>
 <ownerDesignName>bd_youtube</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -34,6 +35,21 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="44DEFE92-27FA-3901-9D2C-C2C62CFF61F6" referredColumn="BBC431B6-23D8-C0B2-A9C6-6FE9EC170026"/>
+</associations>
+</Column>
+<Column name="CODIGO_COMENTARIO" id="E7DBE297-54B9-36B4-86DF-9F198A773789">
+<createdBy>ErickVladimir</createdBy>
+<createdTime>2017-02-20 19:22:17 UTC</createdTime>
+<ownerDesignName>bd_youtube</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0371F46E-AE1D-07D0-3117-95760D6A2874" referredColumn="9943E373-BCF3-F1D8-E8A7-8C2BD4192436"/>
 </associations>
 </Column>
 <Column name="CODIGO_REACCION" id="0CB1AC71-E7EE-2356-46B9-452A95350523">
@@ -63,16 +79,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="78A21360-6DF4-23E9-BBA4-321362245BEE" name="TBL_REGISTRO_REACCIONES_PK">
+<ind_PK_UK id="46864C0E-9805-1ABA-47A8-0EA8AD36492F" name="TBL_REGISTRO_REACCIONES__UN">
 <createdBy>ErickVladimir</createdBy>
-<createdTime>2017-02-16 19:53:09 UTC</createdTime>
+<createdTime>2017-02-20 19:27:14 UTC</createdTime>
 <ownerDesignName>bd_youtube</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C2B86FFA-B76B-3F49-737E-AB68B4898D58"/>
 <colUsage columnID="86AD2859-A553-97A5-6A10-9E64FC97DE02"/>
+<colUsage columnID="E7DBE297-54B9-36B4-86DF-9F198A773789"/>
 <colUsage columnID="0CB1AC71-E7EE-2356-46B9-452A95350523"/>
 </indexColumnUsage>
 </ind_PK_UK>
@@ -104,6 +120,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0CB1AC71-E7EE-2356-46B9-452A95350523"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42D9AA2D-1586-AD21-E4CE-3E4988462CC5" name="TBL_REGISTRO_REACCIONES_TBL_COMENTARIO_FK">
+<createdBy>ErickVladimir</createdBy>
+<createdTime>2017-02-20 19:22:17 UTC</createdTime>
+<ownerDesignName>bd_youtube</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7DBE297-54B9-36B4-86DF-9F198A773789"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
