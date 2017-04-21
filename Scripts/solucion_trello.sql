@@ -195,7 +195,18 @@ ON (A.CODIGO_ORGANIZACION = E.CODIGO_ORGANIZACION);
 
 */
 
-
+SELECT  A.CODIGO_FACTURA, 
+        B.NOMBRE_PLAN, 
+        C.NOMBRE || ' ' || C.APELLIDO AS NOMBRE_COMPLETO,
+        MONTO, DESCUENTO,
+        TO_CHAR(A.FECHA_INICIO, 'DD-MM-YYYY') AS FECHA_PAGO,
+        TO_CHAR(A.FECHA_INICIO, 'MM-YYYY') AS MES_PAGO,
+        MONTO -  DESCUENTO AS TOTAL_NETO
+FROM TBL_FACTURACION_PAGOS A
+LEFT JOIN TBL_PLANES B
+ON (A.CODIGO_PLAN = B.CODIGO_PLAN)
+LEFT JOIN TBL_USUARIOS C
+ON (A.CODIGO_USUARIO = C.CODIGO_USUARIO);
 
 /*
 9. Crear una tabla dinámica en excel que consulte la información de la vista materializada del inciso anterior, de dicha tabla dinámica crear un gráfico de línea que muestre en el eje X el campo Año/mes de pago y en el eje Y los nombres de los planes, el valor numérico a mostrar en la grafica deberá ser el Total neto.*/
